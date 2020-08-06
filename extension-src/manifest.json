@@ -1,0 +1,39 @@
+{
+  "name": "My Web Guard",
+  "short_name": "MyWebGuard",
+  "version": "2.0.0",
+  "description": "A Self-Protecting Tool for Web Users",
+  "author": "Intelligent Systems Security Lab - CS - UDayton",
+  "homepage_url": "https://isseclab-udayton.github.io/",
+  "minimum_chrome_version": "33.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": [
+        "js/inject/guard.js",
+        "js/inject/inject.js"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "My Web Guard"
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "permissions": [
+    "tabs",
+    "storage",
+    "unlimitedStorage",
+    "webNavigation",
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    "/web_accessible_resources/*"
+  ]
+}

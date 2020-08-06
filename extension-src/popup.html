@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <link rel='stylesheet' type='text/css' href='lib/bootstrap-4.4.1/css/bootstrap.min.css'/>
+    <link rel='stylesheet' type='text/css' href='lib/DataTables/datatables.min.css'/>
+    <link rel='stylesheet' type='text/css' href='lib/font-awesome-4.7.0/css/font-awesome.min.css'/>
+    <link rel='stylesheet' href='css/popup.css' type='text/css'/>
+    <link rel='stylesheet' href='css/checkbox.css' type='text/css'/>
+    <title>My Web Guard</title>
+</head>
+
+<body id='my-web-guard-popup'>
+<header>
+    <nav class='navbar navbar-light bg-light justify-content-between'>
+        <a class='navbar-brand'>MyWebGuard</a>
+        <a class='btn btn-outline-dark my-2 my-sm-0' href='https://isseclab-udayton.github.io/' target='_blank'>Options</a>
+    </nav>
+</header>
+<div class='container-fluid'>
+    <main role='main' class='py-3'>
+        <table id='tableRules' class='table w-100'>
+            <thead>
+            <tr>
+                <th>Code Origin</th>
+                <th>Block</th>
+            </tr>
+            </thead>
+        </table>
+    </main>
+</div>
+<script type='text/javascript' src='lib/jquery-3.4.1.slim.min.js'></script>
+<script type='text/javascript' src='lib/bootstrap-4.4.1/js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript' src='lib/DataTables/datatables.min.js'></script>
+<script type='text/javascript' src='js/popup.js'></script>
+</body>
+
+</html>
